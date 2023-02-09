@@ -1,8 +1,10 @@
+import ToDoList from "./Components/ToDoList"
+
 function App() {
   
   return (
     <div className="App">
-      Just Do It
+      <ToDoList/>
     </div>
   )
 }

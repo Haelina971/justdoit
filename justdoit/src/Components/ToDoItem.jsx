@@ -1,6 +1,10 @@
-function ToDoItem() {
+function ToDoItem(props) {
     return (
-        <p>To Do Item</p>
+        <div>
+            <h2>{props.title}</h2>
+            <progress></progress>
+            <div>{props.beginDate.toISOString()}</div>
+        </div>
     );
 }
 
