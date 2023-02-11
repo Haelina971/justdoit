@@ -1,11 +1,9 @@
-import NavBar from "./NavBar";
-import logo from "../assets/logo.png"
+import Nav from "./NavBar";
 
 function Header() {
     return (
-        <div>
-            <img src={logo} className="h-25 d-inline-block" style={{width: 100}}/>
-            <NavBar/>
+        <div>            
+            <Nav/>
         </div>
     );
 }
