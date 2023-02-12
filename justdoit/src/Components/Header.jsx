@@ -1,9 +1,9 @@
-import Nav from "./NavBar";
+import NavBar from "./NavBar";
 
 function Header() {
     return (
         <div>            
-            <Nav/>
+            <NavBar/>
         </div>
     );
 }
