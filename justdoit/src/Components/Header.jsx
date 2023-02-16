@@ -7,9 +7,9 @@ function Header() {
     return (
         <div>           
             <NavBar/>
-            <Card className="text-white">
+            <Card className="text-white bg-dark text-center">
                 {/*Add dark overlay over image and center text*/}
-                <Card.Img src={HeroImg} alt="Hero Image" />
+                <Card.Img src={HeroImg} className="opacity-50" alt="Hero Image" />
                 <Card.ImgOverlay>
                     <Card.Title>Start planning and organizing like a pro!</Card.Title>
                     <Card.Text>
