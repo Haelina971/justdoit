@@ -10,19 +10,20 @@ function NavBar() {
     //Returns NavBar when logged in
     //Need to look how to change links when not logged in
     return (
-        <Navbar bg="light">
-            <Container>
+        <Navbar bg="light" className='d-flex justify-content-between px-3'>
                 <Navbar.Brand href="/">
-                    <img src={logo} className="h-25 d-inline-block align-top" 
+                    <img src={logo} className="h-25 d-inline-block" 
                     style={{width: 100}}
                     alt="Logo"
                     />
                     {' '}
                     Just Do It
                 </Navbar.Brand>
-                <NavItem to="/todolist">My List</NavItem>
-                <NavItem to="/pages/about">About</NavItem>
-            </Container>
+                {/* Make color pill change depending on the active link */}
+                <Nav variant='pills' defaultActiveKey="mylist">
+                    <Nav.Item><Nav.Link href="/todolist" eventKey="mylist">My List</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/pages/about" eventKey="about">About</Nav.Link></Nav.Item>
+                </Nav>
         </Navbar>
     );
 }
