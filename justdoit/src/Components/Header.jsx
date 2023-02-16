@@ -7,7 +7,7 @@ function Header() {
     return (
         <div>           
             <NavBar/>
-            <Card>
+            <Card className="bg-dark">
                 {/*Add dark overlay over image and center text*/}
                 <Card.Img src={HeroImg} className="opacity-50" alt="Hero Image" />
                 <Card.ImgOverlay className="d-flex align-items-center">
