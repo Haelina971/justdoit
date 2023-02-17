@@ -1,4 +1,5 @@
 import ToDoItem from "./ToDoItem";
+import Card from 'react-bootstrap/Card';
 
 function ToDoList() {
     //Arrays of ToDoItems
@@ -13,10 +14,10 @@ function ToDoList() {
 
     //Renders different ToDoItems
     return (
-        <div>
+        <Card className="w-50 mx-auto m-5 border-0">
             <ToDoItem title={items[0].title} date={items[0].date}/>
             <ToDoItem title={items[1].title} date={items[1].date}/>
-        </div>
+        </Card>
     );
 }
 
