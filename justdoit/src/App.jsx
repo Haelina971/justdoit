@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import './styles.css';
 import { Route, Routes } from 'react-router-dom';
 import ToDoList from "./Components/ToDoList"
