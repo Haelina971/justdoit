@@ -1,8 +1,5 @@
-import NavItem from './NavItem';
-import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
 import logo from '../assets/logo.png';
 
 function NavBar() {
@@ -10,19 +7,19 @@ function NavBar() {
     //Returns NavBar when logged in
     //Need to look how to change links when not logged in
     return (
-        <Navbar bg="light">
-            <Container>
-                <Navbar.Brand href="/">
-                    <img src={logo} className="h-25 d-inline-block align-top" 
+        <Navbar bg="light" className="d-flex justify-content-between">
+                <Navbar.Brand href="/" className="px-3">
+                    <img src={logo} className="h-25 d-inline-block" 
                     style={{width: 100}}
                     alt="Logo"
                     />
                     {' '}
                     Just Do It
                 </Navbar.Brand>
-                <NavItem to="/todolist">My List</NavItem>
-                <NavItem to="/pages/about">About</NavItem>
-            </Container>
+                <Nav variant="pills" activeKey="mylist" className="justify-content-end">
+                    <Nav.Item className="px-3"><Nav.Link href="/todolist" eventKey="mylist">My List</Nav.Link></Nav.Item>
+                    <Nav.Item className="px-3"><Nav.Link href="/pages/about">About</Nav.Link></Nav.Item>
+                </Nav>
         </Navbar>
     );
 }
