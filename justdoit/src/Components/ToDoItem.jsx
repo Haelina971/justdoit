@@ -7,7 +7,7 @@ function ToDoItem(props) {
     //Use props from parent component ToDoList
     return (
         <Card className='d-flex flex-row align-items-center justify-content-between border-success border border-3 rounded-5 p-2 m-4'>
-            <ToDoDate beginDate={props.beginDate}/>
+            <ToDoDate date={props.date}/>
             <h3>{props.title}</h3>
             {/*Add function to change progress
             when possibility to see detail about the ToDoItem
