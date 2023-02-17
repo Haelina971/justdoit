@@ -3,7 +3,7 @@ import HeroImg from '../assets/hero_img.jpg';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-function Header() {
+function Header(props) {
     return (
         <div>           
             <NavBar/>

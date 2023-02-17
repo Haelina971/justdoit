@@ -1,8 +1,5 @@
-import NavItem from './NavItem';
-import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
 import logo from '../assets/logo.png';
 
 function NavBar() {
@@ -20,9 +17,9 @@ function NavBar() {
                     Just Do It
                 </Navbar.Brand>
                 {/* Make color pill change depending on the active link */}
-                <Nav variant='pills' defaultActiveKey="mylist">
-                    <Nav.Item><Nav.Link href="/todolist" eventKey="mylist">My List</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/pages/about" eventKey="about">About</Nav.Link></Nav.Item>
+                <Nav variant='pills' activeKey="none">
+                    <Nav.Link href="/todolist">My List</Nav.Link>
+                    <Nav.Item><Nav.Link href="/pages/about">About</Nav.Link></Nav.Item>
                 </Nav>
         </Navbar>
     );

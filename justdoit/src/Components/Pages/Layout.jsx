@@ -2,7 +2,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Outlet } from "react-router-dom";
 
-function Layout() {
+function Layout(props) {
     return (
         <div>
             <Header/>
