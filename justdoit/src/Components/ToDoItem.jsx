@@ -6,7 +6,7 @@ function ToDoItem(props) {
     //Renders one ToDoItem
     //Use props from parent component ToDoList
     return (
-        <Card className='d-flex flex-row align-items-center justify-content-between border-success border border-3 rounded-5 p-2 m-4'>
+        <Card className='d-flex flex-row align-items-center justify-content-between border-success border border-3 rounded-5 p-2 m-3 shadow'>
             <ToDoDate date={props.date}/>
             <h3>{props.title}</h3>
             {/*Add function to change progress

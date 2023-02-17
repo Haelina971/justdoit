@@ -14,7 +14,7 @@ function ToDoList() {
 
     //Renders different ToDoItems
     return (
-        <Card className="w-50 mx-auto m-5 border-0">
+        <Card className="w-50 mx-auto m-5 border-0 shadow-sm">
             <ToDoItem title={items[0].title} date={items[0].date}/>
             <ToDoItem title={items[1].title} date={items[1].date}/>
         </Card>
