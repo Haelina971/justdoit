@@ -18,7 +18,7 @@ function NavBar() {
                 </Navbar.Brand>
                 {/* Make color pill change depending on the active link */}
                 <Nav variant='pills' defaultActiveKey="mylist">
-                    <Nav.Item><Nav.Link href="/todolist" eventKey="mylist">My List</Nav.Link></Nav.Item>
+                    <Nav.Link href="/todolist" eventKey="mylist">My List</Nav.Link>
                     <Nav.Item><Nav.Link href="/pages/about" eventKey="about">About</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/pages/login" eventKey="login">Log In</Nav.Link></Nav.Item>
                 </Nav>

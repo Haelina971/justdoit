@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header(props) {
     return (
         <div>           
             <NavBar/>
