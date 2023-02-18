@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import HeroImg from '../assets/hero_img.jpg';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -16,7 +17,9 @@ function Header() {
                         <Card.Text>
                             Add small text for people to sign up
                         </Card.Text>
-                        <Button className="mt-5" variant="success">Register</Button>{' '}
+                        <Link to="pages/signup">
+                            <Button className="mt-5" variant="success">Register</Button>{' '}
+                        </Link>
                     </Card>
                 </Card.ImgOverlay>
             </Card>
