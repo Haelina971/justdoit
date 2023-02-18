@@ -1,8 +1,8 @@
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../UI/Header";
+import Footer from "../UI/Footer";
 import { Outlet } from "react-router-dom";
 
-function Layout(props) {
+const Layout = (props) => {
     return (
         <div>
             <Header/>

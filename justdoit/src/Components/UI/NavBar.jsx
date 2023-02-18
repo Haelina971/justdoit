@@ -1,8 +1,8 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 
-function NavBar() {
+const NavBar = () =>  {
 
     //Returns NavBar when logged in
     //Need to look how to change links when not logged in

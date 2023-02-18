@@ -1,7 +1,7 @@
 import ToDoItem from "./ToDoItem";
 import Card from 'react-bootstrap/Card';
 
-function ToDoList() {
+const ToDoList = () =>  {
     //Arrays of ToDoItems
     const items = [
         {title: "Learn React",

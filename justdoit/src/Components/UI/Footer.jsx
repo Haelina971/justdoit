@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
-function Footer() {
+const Footer = () =>  {
     return (
         <Card.Footer className="h4 text-center text-muted">	&#169;The Mentoring Framework</Card.Footer>
     );

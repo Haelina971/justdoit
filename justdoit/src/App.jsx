@@ -9,7 +9,7 @@ import LogIn from './Components/Pages/LogIn';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
 
-function App() {
+const App = () =>  {
   //Renders ToDoList
   return (
     <div className="App">

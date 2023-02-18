@@ -2,7 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 
-function SignUp() {
+const SignUp = () =>  {
+    //Look how to make a form reusable just different labels
     return (
       <Card className='m-5 p-2 w-25 mx-auto'>
         <Form className="m-3">

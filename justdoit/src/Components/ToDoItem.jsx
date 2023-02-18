@@ -2,7 +2,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import ToDoDate from './ToDoDate';
 import Card from 'react-bootstrap/Card';
 
-function ToDoItem(props) {
+const ToDoItem = (props) =>  {
     //Renders one ToDoItem
     //Use props from parent component ToDoList
     return (

@@ -1,10 +1,11 @@
 import NavBar from "./NavBar";
-import HeroImg from '../assets/hero_img.jpg';
+import HeroImg from '../../assets/hero_img.jpg';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-function Header(props) {
+//Look at argument props if still necessary
+const Header = (props) =>  {
     return (
         <div>           
             <NavBar/>
