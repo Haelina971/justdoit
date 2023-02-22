@@ -31,11 +31,11 @@ const ToDoForm = (props) => {
   //Reset value of input fields
   const submitHandler = (event) => {
     event.preventDefault();
-    const ToDoData = {
+    const toDoData = {
         task: userInput.enteredTask,
         date: new Date(userInput.enteredDate),
     }
-    console.log(ToDoData);
+    props.onSaveToDoData(toDoData);
     setUserInput({
         enteredTask:'',
         enteredDate: ''
@@ -43,7 +43,7 @@ const ToDoForm = (props) => {
   };
 
   return (
-    <Card className="w-50 mx-auto border-success border border-3 rounded-5 px-5 m-5 shadow">
+    <Card className="w-75 mx-auto border-success border border-3 rounded-5 px-5 m-5 shadow">
       <Form onSubmit={submitHandler}>
         <Input
           controlId="toDoName"
