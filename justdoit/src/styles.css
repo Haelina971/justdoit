@@ -2,3 +2,9 @@
     background-color: green;
     color: white;
 }
+
+.clock {
+    text-shadow: 0.3em 0.5em 0.4em #000203;
+    color: rgb(8, 51, 100);
+    
+}

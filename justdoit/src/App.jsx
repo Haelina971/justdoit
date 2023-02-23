@@ -8,7 +8,8 @@ import SignUp from './Components/Pages/SignUp';
 import LogIn from './Components/Pages/LogIn';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
-import Clock from './Components/'
+import Clock from './Components/Pages/Clock'
+import React from 'react';
 
 const App = () =>  {
   //Renders ToDoList

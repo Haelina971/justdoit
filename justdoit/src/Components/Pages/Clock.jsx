@@ -3,9 +3,11 @@ import React from "react";
 const Clock = () => {
 
     return (
-        <p>
-            {new Date().toLocaleTimeString()}
-        </p>
+        <div>
+            <h4>
+                {new Date().toLocaleTimeString()}
+            </h4>
+        </div>
     );
 }
 

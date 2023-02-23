@@ -1,6 +1,8 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import logo from '../../assets/logo.png';
+import Clock from '../Pages/Clock';
+import React from 'react';
 
 const NavBar = () =>  {
 
@@ -17,6 +19,9 @@ const NavBar = () =>  {
                     Just Do It
                 </Navbar.Brand>
                 {/* Make color pill change depending on the active link */}
+                <Nav.Item className='clock'>
+                    <Clock/>
+                </Nav.Item>
                 <Nav variant='pills' defaultActiveKey="mylist">
                     <Nav.Link href="/todolist" eventKey="mylist">My List</Nav.Link>
                     <Nav.Item><Nav.Link href="/pages/about" eventKey="about">About</Nav.Link></Nav.Item>
