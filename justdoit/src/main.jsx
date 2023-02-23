@@ -1,11 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import App from './App'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function tick() {
-  ReactDOM.createRoot(document.getElementById('root')).render(
+  ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
@@ -13,7 +13,8 @@ function tick() {
         </Routes>
       </BrowserRouter>
     </React.StrictMode>,
-  )
+    document.getElementById('root')
+  );
 }
 
 setInterval(tick, 1000)
