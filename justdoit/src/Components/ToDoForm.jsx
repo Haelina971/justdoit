@@ -32,7 +32,7 @@ const ToDoForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const toDoData = {
-        task: userInput.enteredTask,
+        title: userInput.enteredTask,
         date: new Date(userInput.enteredDate),
     }
     props.onSaveToDoData(toDoData);
