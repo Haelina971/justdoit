@@ -8,6 +8,7 @@ import SignUp from './Components/Pages/SignUp';
 import LogIn from './Components/Pages/LogIn';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
+import Clock from './Components/'
 
 const App = () =>  {
   //Renders ToDoList
@@ -15,6 +16,7 @@ const App = () =>  {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="/clock" element={<Clock />}></Route>
           <Route path="/pages/home" element={<Home />}></Route>
           <Route path="/pages/signup" element={<SignUp />}></Route>
           <Route path="/pages/login" element={<LogIn />}></Route>
