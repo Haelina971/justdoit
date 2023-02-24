@@ -13,12 +13,14 @@ const IDForm = (props) => {
           type="email"
           placeholder="Enter email"
           onChange={props.onChange}
+          value={props.value}
         />
         <Input
           controlId="formBasicPassword"
           type="password"
           placeholder="Password"
           onChange={props.onChange}
+          value={props.value}
         />
         <Button variant="success" className="my-3" type="submit">
           {props.action}
