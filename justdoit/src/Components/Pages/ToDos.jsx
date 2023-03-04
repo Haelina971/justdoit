@@ -1,6 +1,6 @@
 import { useState } from "react";
-import NewToDo from "../NewToDo";
-import ToDoList from "../ToDoList";
+import NewToDo from "../Todos/NewToDo";
+import ToDoList from "../Todos/ToDoList";
 import Card from "react-bootstrap/Card";
 
 //Arrays of ToDoItems

@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Input from "./Forms/Input";
+import Input from "../Forms/Input";
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
 

@@ -1,5 +1,4 @@
 import ToDoForm from "./ToDoForm";
-import Card from "react-bootstrap/Card";
 
 const NewToDo = (props) => {
   //Used as props value to pass data as an intermediary
