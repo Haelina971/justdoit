@@ -10,6 +10,7 @@ const Input = (props) => {
         size={props.size}
         onChange={props.onChange}
         value={props.value}
+        autoComplete={props.autoComplete}
       />
     </Form.Group>
   );
