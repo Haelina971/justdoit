@@ -9,8 +9,8 @@ import LogIn from './Components/Pages/LogIn';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
 
-const App = () =>  {
-  //Renders ToDoList
+const App = () => {
+  //Use Routes to render different pages
   return (
     <div className="App">
       <Routes>

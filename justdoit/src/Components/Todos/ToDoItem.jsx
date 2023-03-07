@@ -1,7 +1,7 @@
 import ProgressBar from "react-bootstrap/ProgressBar";
 import ToDoDate from "./ToDoDate";
 import Card from "react-bootstrap/Card";
-import supabase from "../../supabase";
+import supabase from "../Backend/supabase";
 import { useEffect } from "react";
 
 const ToDoItem = (props) => {
