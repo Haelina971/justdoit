@@ -5,16 +5,6 @@ import supabase from "../Backend/supabase";
 import { useEffect } from "react";
 
 const ToDoItem = (props) => {
-  // async function fetchData() {
-  //   let { data: task, error } = await supabase
-  //     .from("todos")
-  //     .select("*");
-  //   console.log(task);
-  // }
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
 
   //Renders one ToDoItem
   //Use props from parent component ToDoList

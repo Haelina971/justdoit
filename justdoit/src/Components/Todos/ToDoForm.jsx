@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Input from "../Forms/Input";
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
+import supabase from "../Backend/supabase";
 
 const ToDoForm = (props) => {
     //useState to keep track of changes in input fields    
@@ -29,13 +30,22 @@ const ToDoForm = (props) => {
 
   //Collect data from the different inputs into object
   //Reset value of input fields
-  const submitHandler = (event) => {
+  const submitHandler = async (event) => {
     event.preventDefault();
     const toDoData = {
         title: userInput.enteredTask,
         date: new Date(userInput.enteredDate),
     }
     props.onSaveToDoData(toDoData);
+    
+    //Insertion return Error 401
+    const { error } = await supabase
+      .from("users")
+      .insert({
+        email: userInput.enteredEmail,
+        password: userInput.enteredPassword,
+      });
+      
     setUserInput({
         enteredTask:'',
         enteredDate: ''
